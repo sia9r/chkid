@@ -6,7 +6,7 @@ def codemeli (code):
     s = sum([int(code[x]) * (10 - x) for x in range(9)]) % 11
     if  (s < 2 and check == s) or (s >= 2 and check + s == 11):
         print(code)
-with open('303.txt','r') as f:
+with open('Your_text_file.txt','r') as f:
     f1=f.readlines()
 for x in f1:
     codemeli(x)
